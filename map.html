@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>찾아오시는 길</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        a { text-decoration:none }
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+            position: absolute;
+        }
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .header h1 {
+            font-size: 50px;
+        }
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+            float: left;
+            width: 75%;
+        }
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        /* Fake image */
+        img {
+          width: 100%;
+          height: 160px;
+          object-fit: fill;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        
+            
+        
+        </style>
+</head>
+<body link="black" alin="black" vlink="black">
+    <div class="header">
+        <a href="index.html"><h1>KOO PUTSAL PARK</h1></a>
+        <div style=float:right>
+            <a href="login2.html"><input type="button" value="로그인"></a>
+            ||
+            <a href="login.html"><input type="button" value="회원가입" ></a>
+        </div>
+    </div>
+     
+    <div class="topnav">
+        <a href="">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        <a href="#">PUTSALPARK</a>
+        
+      <a href="map.html" style="float:right">찾아오시는 길 </a>
+    </div>
+     
+    <div class="card">
+        <h2>찾아오시는길</h2>
+        
+        
+        <div class="fakeimg" style="height: 380px;"><!-- * 카카오맵 - 지도퍼가기 -->
+          <!-- 1. 지도 노드 -->
+          <div id="daumRoughmapContainer1641804022701" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+          
+          <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+          -->
+          <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+          
+          <!-- 3. 실행 스크립트 -->
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              "timestamp" : "1641804022701",
+              "key" : "28r42",
+              "mapWidth" : "1800",
+              "mapHeight" : "300"
+            }).render();
+
+          </script></div>  
+    <div class="footer">
+        <a href="index.html"><h1>KOO PUTSAL PARK</h1></a>
+      <div>
+        <p>문의사항 </p>
+        <p>e-mail : jk960220@naver.com</p>
+        <p>☎ : 010-1234-5678</p>
+      </div> 
+      
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+a{ text-decoration:none }
+body {
+    margin:100px;
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+    position: absolute;
+}
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+.header h1 {
+    font-size: 50px;
+    color:black
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+/* Fake image */
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: fill;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 0px;
+    margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Footer */
+.footer {
+    
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.danger {
+    background-color: #aaa;
+    width: 100%;
+    height: 625px;
+    
+}
+.danger h2{
+  text-align: center;
+}
+.danger ul{
+  font-size: 20px;
+}
+.danger img{
+  width: 100%;
+  height: 250px;
+}
+.footer a{text-decoration:none}
+
+</style>
+</head>
+<body link="black" alin="black" vlink="black">
+ 
+<div class="header">
+    <a href="index.html"><h1>KOO PUTSAL PARK</h1></a>
+    <div style=float:right>
+        <a href="login2.html"><input type="button" value="로그인"></a>
+        ||
+        <a href="login.html"><input type="button" value="회원가입" ></a>
+    </div>
+</div>
+ 
+<div class="topnav">
+  <a href="">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="#">PUTSALPARK</a>
+  <a href="map.html" style="float:right">찾아오시는 길 </a>
+</div>
+ 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>구장</h2>
+      <div class="fakeimg" style="height:200px;"><img src="putsal.jpg"></div>
+      <p style=font-size:25px; >잔디상태도 무지 좋습니다 ㅎㅎ
+        <br>
+        벌써 한 게임 하고 싶지 않으신가요?
+        </p>
+      
+    </div>
+    <div class="card">
+      <h2>예약</h2>
+      <div class="fakeimg" style="height:200px;">
+      From : <input type="date" name="from" min="2022-01-01" max="2022-01-31">
+      To : <input type="date" name="to" min="2022-01-01" max="2022-01-31">
+      
+      
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="danger">
+      <h2>★★★주의사항★★★</h2>
+      <div class="fakeimg" style="height:100px;"> 
+      <ul>---이용수칙---
+        <br>
+        <br>
+        <li>
+          1. 체온 체크, QR코드(인원 명부)에 협조해 주세요
+        </li>
+        <br>
+        <li>
+          2. 운동 중에도 반드시 마스크 착용
+        </li>
+        <br>
+        <li>
+          3. 물, 음료수는 개인용으로 준비해 주세요
+        </li>
+        <br>
+      </ul>
+      <img src="covid19.jpg">
+
+
+
+      </div>
+    </div>
+  
+    
+    
+  </div>
+</div>
+ 
+<div class="footer">
+  <a href="index.html"><h1>KOO PUTSAL PARK</h1></a>
+      <div>
+        <p>문의사항 </p>
+        <p>e-mail : jk960220@naver.com</p>
+        <p>☎ : 010-1234-5678</p>
+      </div> 
+</div>
+ 
+</body>
+</html>
